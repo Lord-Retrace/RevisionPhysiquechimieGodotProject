@@ -1,0 +1,74 @@
+[gd_scene load_steps=2 format=4 uid="uid://caegp2ag7d7h1"]
+
+[ext_resource type="Script" uid="uid://dy007llwcmnfu" path="res://scripts/sujets.gd" id="1"]
+
+[node name="Sujets" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 31.0
+offset_right = 310.0
+offset_bottom = 112.537506
+theme_override_font_sizes/font_size = 51
+text = "Quitter"
+
+[node name="BoutonGauche" type="Button" parent="."]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 350.0
+offset_right = 276.0
+offset_bottom = 430.0
+theme_override_font_sizes/font_size = 51
+text = "<--"
+
+[node name="BoutonDroite" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1002.0
+offset_top = 350.0
+offset_right = 1202.0
+offset_bottom = 430.0
+theme_override_font_sizes/font_size = 51
+text = "-->"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 350.0
+offset_top = 29.0
+offset_right = 934.0
+offset_bottom = 702.0
+expand_mode = 1
+stretch_mode = 4
+
+[node name="JsonRequest" type="HTTPRequest" parent="."]
+
+[node name="ImageRequest" type="HTTPRequest" parent="."]
+
+[node name="DownloadButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1157.0
+offset_top = 25.0
+offset_right = 1257.0
+offset_bottom = 125.0
+text = "Télécharger"
+
+[node name="SaveFileDialog" type="FileDialog" parent="."]
+oversampling_override = 1.0
+access = 2
+use_native_dialog = true
+
+[node name="HTTPDownloader" type="HTTPRequest" parent="."]
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="BoutonGauche" to="." method="_on_gauche_pressed"]
+[connection signal="pressed" from="BoutonDroite" to="." method="_on_droite_pressed"]
+[connection signal="pressed" from="DownloadButton" to="." method="_on_download_button_pressed"]
+[connection signal="files_selected" from="SaveFileDialog" to="." method="_on_save_file_dialog_files_selected"]
+[connection signal="request_completed" from="HTTPDownloader" to="." method="_on_http_downloader_request_completed"]

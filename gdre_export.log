@@ -1,0 +1,36 @@
+GDRE Tools v1.0.2
+Windows 10.0.26100, NVIDIA GeForce RTX 3050 Laptop GPU, opengl3
+Opening file: C:/Users/ethan/Downloads/RevPC/Révisionphysiquechimie.pck
+Loaded 13 imported files
+Detected Engine Version: 4.5.0.beta.2
+Detected Bytecode Revision: 4.5-beta.2 (ebc36a7)
+Verified 30 files, no errors detected!
+Extracted 30 files, no errors detected!
+Saved project config.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     4
+Failed scripts:                         0
+Imported resources for export session:  13
+Successfully converted:                 13
+Lossy:                                  4
+Rewrote metadata:                       5
+Non-importable conversions:             0
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.5.0.beta.2 to edit the project.
+Note: the project may be using a custom version of Godot. Detection for this has not been implemented yet.
+If you find that you have many non-import errors upon opening the project 
+(i.e. scripts or shaders have many errors), use the original game's binary as the export template.
+
+*******************************************************************************
+
