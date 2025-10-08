@@ -78,6 +78,15 @@ offset_bottom = 46.0
 texture = ExtResource("2")
 expand_mode = 1
 
+[node name="Version" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1130.0
+offset_top = 672.0
+offset_right = 1269.0
+offset_bottom = 728.0
+theme_override_font_sizes/font_size = 26
+text = "Version 1.0"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
