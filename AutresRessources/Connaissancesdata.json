@@ -1,10 +1,7 @@
 {
-  "questions": ["Définir ta mère", "Définir l'échelle microscopique","Définir une espèce chimique","Définir un corps pur"],
+  "questions": ["Q1","Q2"],
   
-  "reponses": ["Il s'agit de l'échelle des objets pouvant être observés à l'oeil nu sans appareil grossisant",
-    "Il s'agit de l'échelle des objets ne pouvant pas être observés à l'oeil nu et dont l'observation nécessite un appareil grossisant (comme le microscope)",
-    "Il s'agit d'un ensemble d'entités chimiques toutes identiques pouvant être désignées par une seule et même formule brute",
-    "Il s'agit d'un matériau constitué que d'une seule espèce chimique","Il s'agit d'un matériau dont l'espèce chimique qui le constitue n'est composée que d'un seul type d'atome"],
+  "reponses": ["R11","R12","R13","R21","R22","R23"],
 }
 
 
