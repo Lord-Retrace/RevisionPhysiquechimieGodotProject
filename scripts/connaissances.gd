@@ -54,8 +54,8 @@ func _on_buttoncommencer_pressed():
 
 	# Calcul des indices des réponses associées à cette question
 	# Ex : Q1 → indices 0,1,2 ; Q2 → 3,4,5 ...
-	var start_index = question_index * 3
-	var end_index = start_index + 3
+	var start_index = question_index * 6
+	var end_index = start_index + 6
 	var reponses_possibles = copie_reponses.slice(start_index, end_index)
 
 	# Choisir aléatoirement les positions des réponses
