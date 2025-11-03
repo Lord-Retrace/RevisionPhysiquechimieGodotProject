@@ -17,7 +17,7 @@ var num_photos: int = 0
 
 
 
-const IMAGE_URL_BASE = "https://raw.githubusercontent.com/Lord-Retrace/revision-physique-chimie-datajson/main/mes_images_godot_1/images/image"
+const IMAGE_URL_BASE = "https://raw.githubusercontent.com/Lord-Retrace/RevisionPhysiquechimieGodotProject/main/AutresRessources/images/image"
 
 const JSON_URL = "https://raw.githubusercontent.com/Lord-Retrace/RevisionPhysiquechimieGodotProject/main/AutresRessources/Questionsdatas.json"
 
