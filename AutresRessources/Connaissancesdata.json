@@ -1,7 +1,7 @@
 {
   "questions": ["Quelle est la masse volumique de l'eau liquide à température ambiante?","Quelle est la masse volumique approchée de l'air à température ambiante?","Quelle est la propriété d'une solution ionique?","Quelle est la composition volumique de l'air?"],
   
-  "reponses": ["1,000 kg/L","1000 g/L","1,000 kg/m3","1000 kg/L","1,000 cg/L","1000 kg/m3","1,2 kg/m3","1,2 g/L","1,2 kg/L","1,2g/m3","1,2 cg/L","1,2 cg/mL","Elle conduit la courant électrique","Elle s'échappe du bécher","Elle a une masse volumique très faible","Elle a une température d'ébulition thès haute","Elle a une température de solidification très basse","Elle peut rester liquide même sous de très fortes pressions","78% de diazote,21% de dioxygène,1% d'autres gaz","100% de diazote","100% de dioxygène","50% de diazote,50% de dioxygène","40% de diazote,50% de dioxygène et 10% de dioxyde de carbone","80% de diazote, 20% de dioxygène"],
+  "reponses": ["1,000 kg/L","1000 dg/L","1,000 kg/m3","1000 kg/L","1,000 cg/L","1000 kg/m3","1,2 kg/m3","1,2 dg/L","1,2 kg/L","1,2g/m3","1,2 cg/L","1,2 cg/mL","Elle conduit la courant électrique","Elle s'échappe du bécher","Elle a une masse volumique très faible","Elle a une température d'ébulition très haute","Elle a une température de solidification très basse","Elle peut rester liquide même sous de très fortes pressions","78% de diazote,21% de dioxygène,1% d'autres gaz","100% de diazote","100% de dioxygène","50% de diazote,50% de dioxygène","40% de diazote,50% de dioxygène et 10% de dioxyde de carbone","80% de diazote, 20% de dioxygène"],
 }
 
 

@@ -20,6 +20,7 @@ func _ready():
 	url += "?t=" + str(Time.get_unix_time_from_system())
 	http.request(url)
 
+
 func _on_http_request_request_completed(result, response_code, headers, body):
 	if result != OK or response_code != 200:
 		push_error("Erreur de téléchargement (result=%s, code=%s)" % [result, response_code])
@@ -52,23 +53,42 @@ func _on_buttoncommencer_pressed():
 	$Rep2.position.y = 350
 	$Rep3.position.y = 350
 
-	# Calcul des indices des réponses associées à cette question
-	# Ex : Q1 → indices 0,1,2 ; Q2 → 3,4,5 ...
+	# --- Sélection des 6 réponses associées ---
 	var start_index = question_index * 6
-	var end_index = start_index + 6
+	var end_index = min(start_index + 6, copie_reponses.size())
 	var reponses_possibles = copie_reponses.slice(start_index, end_index)
 
-	# Choisir aléatoirement les positions des réponses
-	reponses_possibles.shuffle()
-	reponse = reponses_possibles[0]  # la "bonne" réponse (on peut ajuster selon besoin)
+	if reponses_possibles.size() == 0:
+		push_error("Aucune réponse trouvée pour la question " + str(question_index))
+		return
 
-	# Placement des réponses sur les boutons
-	$Rep1/Label1.text = reponses_possibles[0]
-	$Rep2/Label2.text = reponses_possibles[1]
-	$Rep3/Label3.text = reponses_possibles[2]
+	# La bonne réponse est toujours la première du bloc dans le JSON
+	reponse = reponses_possibles[0]
+
+	# Mélange pour rendre l’ordre aléatoire
+	reponses_possibles.shuffle()
+
+	# S'assurer que la bonne réponse soit incluse
+	if reponse not in reponses_possibles:
+		reponses_possibles[0] = reponse
+
+	# Sélectionner 3 réponses parmi les 6 (dont forcément la bonne)
+	var reponses_affichees = []
+	reponses_affichees.append_array(reponses_possibles.slice(0, 3))
+
+	# Vérifier que la bonne réponse soit incluse, sinon remplacer une au hasard
+	if reponse not in reponses_affichees:
+		var rand_index = randi() % 3
+		reponses_affichees[rand_index] = reponse
+
+	# Afficher sur les boutons
+	$Rep1/Label1.text = reponses_affichees[0]
+	$Rep2/Label2.text = reponses_affichees[1]
+	$Rep3/Label3.text = reponses_affichees[2]
 
 	print("Question :", question)
-	print("Réponses proposées :", reponses_possibles)
+	print("Réponses possibles (6) :", reponses_possibles)
+	print("Réponses affichées (3) :", reponses_affichees)
 	print("Bonne réponse :", reponse)
 
 
