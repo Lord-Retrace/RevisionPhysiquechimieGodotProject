@@ -94,7 +94,8 @@ func _ready():
 	add_child(http)
 	http.connect("request_completed", Callable(self, "_on_http_request_request_completed"))
 
-	var url = "https://raw.githubusercontent.com/Lord-Retrace/revision-physique-chimie-datajson/main/Questionsdatas.json"
+	#var url = "https://raw.githubusercontent.com/Lord-Retrace/revision-physique-chimie-datajson/main/Questionsdatas.json"
+	var url = "https://raw.githubusercontent.com/Lord-Retrace/RevisionPhysiquechimieGodotProject/main/AutresRessources/Questionsdatas.json"
 	url += "?t=" + str(Time.get_unix_time_from_system())
 	http.request(url)
 
@@ -123,9 +124,6 @@ func _on_http_request_request_completed(result, response_code, headers, body):
 	if data == null:
 		push_error("Erreur : JSON invalide")
 		return
-
-
-	print("TESTTEST")
 
 	questions.clear()
 	reponses.clear()
