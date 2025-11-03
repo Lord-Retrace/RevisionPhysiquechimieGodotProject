@@ -95,7 +95,7 @@ func _ready():
 	http.connect("request_completed", Callable(self, "_on_http_request_request_completed"))
 
 	#var url = "https://raw.githubusercontent.com/Lord-Retrace/revision-physique-chimie-datajson/main/Questionsdatas.json"
-	var url = "https://raw.githubusercontent.com/Lord-Retrace/RevisionPhysiquechimieGodotProject/main/AutresRessources/Questionsdatas.json"
+	var url = "https://raw.githubusercontent.com/Lord-Retrace/RevisionPhysiquechimieGodotProject/main/AutresRessources/Connaissancesdatas.json"
 	url += "?t=" + str(Time.get_unix_time_from_system())
 	http.request(url)
 
