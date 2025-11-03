@@ -1,0 +1,34 @@
+{
+  "questions": ["Définir l'échelle macroscopique", "Définir l'échelle microscopique","Définir une espèce chimique","Définir un corps pur",
+    "Définir un corps pur simple","Définir un corps pur complexe","Définir un mélange","Quand dit-on qu'un mélange est homogène?","Quand dit-on qu'un mélange est hétérogène?","Quand dit-on que deux liquides sont miscibles?",
+  "Quand dit-on que deux liquides sont non-miscibles?","Définir la masse volumique","Définir l'intensité du courant électrique","Définir la tension électrique","Définir la température d'évaporisation ou d'ébullition","Définir la température de fusion ou de solidification",
+  "Définir solution aqueuse","Définir solvant","Définir soluté","Définir dissolution","Définir concentration massique","Définir dilution","Définir facteur de dilution"],
+  
+  "reponses": ["Il s'agit de l'échelle des objets pouvant être observés à l'oeil nu sans appareil grossisant",
+    "Il s'agit de l'échelle des objets ne pouvant pas être observés à l'oeil nu et dont l'observation nécessite un appareil grossisant (comme le microscope)",
+    "Il s'agit d'un ensemble d'entités chimiques toutes identiques pouvant être désignées par une seule et même formule brute",
+    "Il s'agit d'un matériau constitué que d'une seule espèce chimique","Il s'agit d'un matériau dont l'espèce chimique qui le constitue n'est composée que d'un seul type d'atome",
+    "Il s'agit d'un matériau dont l'espèce chimique qui le constitue est composée de plusieurs types d'atomes différents","Il s'agit d'un matériau composé de plusieurs espèces chimiques différentes",
+    "Quand il n'est constitué que d'une seule phase,c'est à dire qu'à l'oeil nu,on ne peut pas distinguer ses constituants",
+    "Quand il est constitué d'au moins deux phases visibles à l'oeil nu,même après agitation",
+    "Quand leur mélange est homogène","Quand leur mélange est hétérogène","Cette propriété d'un corps (X),notée ρ (X) , correspond au quotient de la masse m (X) de ce corps et du volume V (X) occupé par ce corps",
+    "Cela représente la quantité de charges électriques qui traverse une section donnée du circuit par unité de temps. Elle se note I,s'exprime en Ampère (A) et se mesure avec un ampèremètre",
+    "Cela représente la différence de potentiel électrique entre deux points du circuit électrique.C'est cette différence de potentiel électrique entre deux points du circuit qui génère un déplacement des charges électriques entre ces deux points.Elle se note U,s'exprime en Volt (V) et se mesure avec un voltmètre.",
+    "Il s'agit de la température où,à pression constante,un corps pur passe soit de l'état liquide à l'état gazeux soit de l'état gazeux à l'état liquide",
+    "Il s'agit de la température où,à pression constante,un corps pur passe soit l'état solide à l'état liquide soit de l'état liquide à l'état solide",
+    "Il s'agit d'un mélange homogène constitué d'eau et d'autres espèces chimiques",
+    "Il s'agit de l'espèce majoritaire du mélange,c'est à dire l'espèce chimique présente en plus grande quantité",
+    "Il s'agit des espèces minoritaires du mélange,c'est à dire les espèces chimiques présentes en quantité moindres",
+    "Il s'agit d'un processus au cours duquel un soluté est dispersé dans le solvant.Les molécules de solvant viennent entourer le soluté.Après agitation,on ne peut plus distinguer le soluté à l'oeil nu.",
+    "Cela correspond à la masse du soluté notée m (soluté), contenue dans un volume de la solution notée V (solution)",
+    "Il s'agit du processus par lequel on diminue la concentration en masse d'un soluté d'une solution aqueuse déjà préparée,en ajoutant du solvant à la solution aqueuse",
+    "Cet élément indique par combien a été divisée la concentration en masse de la solution 'trop' concentrée (solution mère) au cours de la dilution"],
+  "nbphotos": "8"
+}
+
+
+
+
+
+
+
