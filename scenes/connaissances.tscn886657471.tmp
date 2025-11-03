@@ -103,31 +103,5 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Bonnereponse" type="Label" parent="."]
-layout_mode = 0
-offset_left = 916.0
-offset_top = 108.0
-offset_right = 1266.0
-offset_bottom = 176.0
-theme_override_colors/font_color = Color(0.4862745, 1, 0.4862745, 1)
-theme_override_font_sizes/font_size = 46
-text = "Bonne réponse!"
-
-[node name="Mauvaisereponse" type="Label" parent="."]
-layout_mode = 0
-offset_left = 892.0
-offset_top = 108.0
-offset_right = 1265.0
-offset_bottom = 176.0
-theme_override_colors/font_color = Color(1, 0, 0.05490196, 1)
-theme_override_font_sizes/font_size = 41
-text = "Mauvaise réponse"
-
-[node name="HTTPRequest" type="HTTPRequest" parent="."]
-
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Buttoncommencer" to="." method="_on_buttoncommencer_pressed"]
-[connection signal="pressed" from="Rep1" to="." method="_on_rep_1_pressed"]
-[connection signal="pressed" from="Rep2" to="." method="_on_rep_2_pressed"]
-[connection signal="pressed" from="Rep3" to="." method="_on_rep_3_pressed"]
-[connection signal="request_completed" from="HTTPRequest" to="." method="_on_http_request_request_completed"]
