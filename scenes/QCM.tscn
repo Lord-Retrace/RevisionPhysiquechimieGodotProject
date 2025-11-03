@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=4 uid="uid://s3w4gcukmlkj"]
+[gd_scene load_steps=2 format=3 uid="uid://s3w4gcukmlkj"]
 
-[ext_resource type="Script" uid="uid://cgcauhnnwswq8" path="res://scripts/qcm.gd" id="1"]
+[ext_resource type="Script" uid="uid://7e01bgddag4d" path="res://scripts/qcm.gd" id="1"]
 
 [node name="Qcm" type="Control"]
 layout_mode = 3
