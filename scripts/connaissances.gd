@@ -19,6 +19,8 @@ func _ready():
 	var url = "https://raw.githubusercontent.com/Lord-Retrace/RevisionPhysiquechimieGodotProject/refs/heads/main/AutresRessources/Connaissancesdata.json"
 	url += "?t=" + str(Time.get_unix_time_from_system())
 	http.request(url)
+	print("Questions chargées :", questions)
+	print("Réponses chargées :", copie_reponses)
 
 
 func _on_http_request_request_completed(result, response_code, headers, body):
@@ -40,7 +42,6 @@ func _on_http_request_request_completed(result, response_code, headers, body):
 
 func _on_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/Main.tscn")
-
 
 func _on_buttoncommencer_pressed():
 	# Sélection aléatoire d’une question
